@@ -1,7 +1,5 @@
-import 'dart:io' show Platform;
 import 'package:flutter/widgets.dart';
 
-import 'android/app.dart';
-import 'ios/app.dart';
+import 'AndroidApp.dart';
 
-void main() => Platform.isIOS ? runApp(IOSApp()) : runApp(AndroidApp());
+void main() => runApp(AndroidApp());
